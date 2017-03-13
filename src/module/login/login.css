@@ -1,0 +1,206 @@
+@import '../../assets/css/common.css';
+.login {
+    width: 570px;
+    height: 665px;
+    background: #ffffff;
+    box-shadow: 2px 2px 2px #e0e0e0;
+    margin: 0 auto;
+    margin-top: 8%;
+    position: relative;
+}
+
+.login p {text-align: center;}
+
+.login_logo {
+    width: 100%;
+    position: absolute;
+    top: -71px;
+}
+
+.login_logo img {
+    border: 10px solid #e9edee;
+    border-radius: 75px;
+}
+
+.title {
+    line-height: 190px;
+    color: #2085ef;
+    font-size: 35px;
+    padding-top: 65px;
+}
+
+.login p>input {
+    height: 70px;
+    border: none;
+    width: 420px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-family: "Microsoft YaHei";
+    padding-left: 30px;
+    font-size: 20px;
+    background: #e9edee;
+}
+
+.login_sure>input {
+    width: 450px!important;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0!important;
+    color: #BBB8B8;
+}
+
+.login p:nth-child(2) {
+    padding-top: 240px;
+}
+
+.chose {
+    width: 86%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: right!important
+}
+
+.chose b {
+    margin-left: 5px;
+    display: inline-block;
+    float: right;
+    line-height: 17px;
+    font-weight: normal;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2085ef;
+    margin-top: 5%;
+}
+
+.login p>label {
+    margin-right: 2%;
+}
+
+.submit-sure {
+    color: #fff!important;
+    background: #2789e2!important;
+}
+
+.login p:nth-child(3)>label {
+    margin-right: 4%;
+}
+
+.icon-input-clear {
+    position: absolute;
+    right: 60px;
+    height: 40px;
+    top: 41%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.icon-input-clear::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.icon-input-clear .icon-cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+}
+
+.icon-cross::before,
+.icon-cross::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 14px;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: currentColor;
+}
+
+.icon-cross::after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/*适配ipad**/
+
+@media screen and (min-width: 960px) and (max-width: 1024px) {
+    body {
+        overflow: hidden;
+    }
+    .login {
+        width: 50%;
+        height: 400px;
+        margin-top: 15%;
+    }
+    .login p:nth-child(2) {
+        padding-top: 122px;
+    }
+    .login p>label {
+        margin-right: 2%;
+    }
+    .title {
+        line-height: 145px;
+        font-size: 24px;
+        padding-top: 50px;
+    }
+    .title {
+        line-height: 145px;
+        color: #2085ef;
+        font-size: 24px;
+        padding-top: 50px;
+    }
+    .login p>input {
+        height: 50px;
+        border: none;
+        width: 60%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        outline: none;
+        font-family: "Microsoft YaHei";
+        padding-left: 3%;
+        font-size: 16px;
+        background: #e9edee;
+    }
+    .login_sure>input {
+        width: 70%!important;
+    }
+    .submit-sure {
+        color: #fff!important;
+        background: #2789e2!important;
+    }
+    .chose {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+    .chose b {
+        margin-left: 10px;
+    }
+    .icon-input-clear {
+        right: 85px;
+        top: 37%;
+    }
+}

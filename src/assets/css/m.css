@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/*全局*/
+
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+table,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+section,
+footer,
+nav,
+figure,
+figcaption,
+article {
+    margin: 0;
+    padding: 0
+}
+
+header,
+section,
+footer,
+nav,
+figure,
+figcaption,
+article,
+menu {
+    display: block
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'Heiti SC', simhei, 'Lucida Sans Unicode', 'Myriad Pro', 'Hiragino Sans GB', Verdana;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #393737;
+}
+
+img {
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+.l,
+.left {
+    float: left;
+    display: inline-block;
+}
+
+.r,
+.right {
+    float: right;
+    display: inline-block;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+header,
+nav,
+section,
+footer {
+    min-width: 320px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="type"],
+input[type="reset"] {
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+}
+
+a,
+img,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+img,
+button,
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+#wrapper {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+}
+
+.alertcontent {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.alertnotice_sure {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    z-index: 999;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.alertcontent p {
+    text-align: center;
+    line-height: 24px;
+    color: #3293fa;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.alertcontent h1 {
+    color: #787878;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 11px;
+    font-size: 15px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 1em;
+}
+
+.zhezhao {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.fullbg {
+    background-color: #000000;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%!important;
+    z-index: 999;
+}
