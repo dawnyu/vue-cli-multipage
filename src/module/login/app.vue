@@ -67,8 +67,6 @@ export default {
       },
       submit: function() {
         if (!this.isSure) return false
-        if (!this.login) alert('用户名不能为空！')
-        if (!this.password) alert('密码不能为空')
         //登录
         merchantService
         .login({login:this.login,password:this.password},this.$parent)
@@ -118,6 +116,4 @@ export default {
 }
 
 </script>
-<style type="text/css" scoped>
-@import './login.css';
-</style>
+<style type="text/css" scoped src="./login.css"></style>
